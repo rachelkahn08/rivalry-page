@@ -98,6 +98,7 @@ section {
 
 .right-side .details {
 	text-align: left;
+	margin-left: 7vw;
 }
 
 .bullet-point {
@@ -128,7 +129,7 @@ section {
 .navigation {
 	height: 10vw;
 	width: 5vw;
-	margin-top: 50%;
+	margin-top: 50vh;
 	position: absolute;
 }
 

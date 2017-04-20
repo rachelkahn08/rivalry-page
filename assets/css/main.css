@@ -1,0 +1,146 @@
+@font-face {
+	font-family: tarrgetPlatItal;
+	src: url('../fonts/tarrget/tarrgetplatital.ttf');
+}
+
+@font-face {
+	font-family: lato;
+	src: url('../fonts/lato/Lato-Regular.ttf');
+}
+
+
+* {
+  box-sizing: border-box; 
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: #1C232E;
+}
+
+section {
+	height: 100%;
+	width: 90%;
+	justify-content: flex-start;
+	color: #ddd;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding: 30px;
+	font-family: lato;
+}
+
+.invisible {
+	display: none;
+}
+
+.right-side {
+	flex-direction: column;
+}
+
+.character {
+	height: 80%;
+	width: 50%;
+	color: black;
+	word-wrap: break-word;
+	text-align: center;
+	font-size: 4vw;
+	margin-top: 10vh;
+}
+
+.right-side .character {
+	align-self: flex-end;
+}
+
+.character .gopher {
+	background-color: #C4FFFE;
+	z-index: 2;
+}
+
+.character .carl {	
+	align-self: flex-end;
+}
+
+.copy {
+	align-self: flex-end;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.right-side .copy {
+	align-items: flex-start;
+	align-self: flex-start;
+}
+
+.name {
+	font-family: tarrgetPlatItal;
+	font-size: 7vw;
+	letter-spacing: 1vw;
+}
+
+.details {
+	display: flex;
+	flex-direction: column;
+	margin: 5vw;
+	font-size: 2vw;
+	text-align: right;
+	width: 40%;
+}
+
+.right-side .details {
+	text-align: left;
+}
+
+.bullet-point {
+	font-style: italic;
+	font-weight: 100;
+	line-height: 2.25vw;
+}
+
+.bold {
+	margin-top: 1vw;
+	margin-bottom: .5vw;
+	font-weight: 700;
+}
+
+.carl {
+	margin-right: 5vw;
+	background-image: url('../img/carl.jpg');
+	background-size: cover;
+	background-position: top right;
+}
+
+.gopher {
+	background-image: url('../img/gopher.jpg');
+	background-size: cover;
+	background-position: top center;
+}
+
+.navigation {
+	height: 10vw;
+	width: 5vw;
+	margin-top: 50%;
+	position: absolute;
+}
+
+.right-arrow {
+	right: 0;
+	background-image: url('../img/right-arrow.png');
+	background-size: cover;
+	background-position: top center;
+}
+
+.left-arrow {
+	background-image: url('../img/left-arrow.png');
+	background-size: cover;
+	background-position: top center;
+}

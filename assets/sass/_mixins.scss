@@ -1,0 +1,26 @@
+@mixin breakpoint($width) {
+	@if $width == huge {
+	   @media screen and (min-width: 1440px) { @content ; }
+	}
+    @if $width == desktop {
+      @media screen and (min-width: 1200px) { @content ; }
+    }
+    @else if $width == laptop {
+      @media screen and (min-width: 930px) { @content ; }
+    }
+      @else if $width == tablet {
+       @media screen and (min-width: 750px) { @content ; }
+    }
+    @else if $width == phablet {
+      @media screen and (min-width: 400px)  { @content ; }
+    }
+    @else if $width == tiny {
+      @media screen and (max-width: 200px)  { @content ; }
+    }
+}
+
+@mixin columnWidth($width) {
+	@if $width == half {
+		width: 50%;
+	}
+}

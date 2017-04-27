@@ -1,6 +1,174 @@
+@import 'fonts';
+@import 'variables';
+@import '_mixins';
+
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box; 
 }
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	color: $universalWhite;
+}
+
+.side {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: nowrap;
+	padding: 10px;
+
+	.character {
+		position: absolute;
+		height: 80vw;
+		width: 80vw;
+		border-radius: 50%;
+		background-color: white;
+		margin-top: 17.5vw;
+		background-repeat: no-repeat;
+	}
+
+	.copy {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+.name, .bold {
+	font-family: tarrgetplatital;
+
+	@include breakpoint(tiny) {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+	}
+}
+
+.details {
+	text-align: center;
+
+	.bold {
+		font-size: 10vw;
+		letter-spacing: 1vw;
+
+		@include breakpoint(tiny){
+			font-size: 12vw;
+		}
+
+		@include breakpoint(phablet){
+			font-size: 8vw;
+		}
+	}
+
+	.bullet-point {
+		margin-bottom: 10vw;
+		font-family: lato-light;
+		font-style: italic;
+		font-weight: 100;
+		font-size: 8vw;
+
+		@include breakpoint(tiny){
+			font-family: 'Helvetica', 'Arial', sans-serif;
+			font-style: initial;
+			font-size: 10vw;
+		}
+
+		@include breakpoint(phablet){
+			font-size: 6vw;
+			margin-bottom: 5vw;
+		}
+
+	}
+
+	@include breakpoint(phablet){
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 89vw;
+	}
+}
+
+.name {	
+	font-size: 12vw;
+	transform: translate(-2vw);
+	line-height: 16vw;
+	letter-spacing: 1vw;
+
+	@include breakpoint(tiny){
+		font-size: 14vw;
+		text-decoration: underline;
+	}
+}
+
+.spacer {
+	height: 85vw;
+	width: 100vw;
+}
+
+.carl-side {
+	background-color: $carlGrey;
+
+	.character{
+		background-color: $carlOrange;
+	}
+}
+
+.gopher-side {
+	background-color: $gopherGrey;
+
+	.character {
+		background-color: $gopherBlue;
+	}
+}
+
+.carl {
+	background-image: url('../img/carl.png');
+	background-size: 110%;
+}
+
+.gopher {
+	background-image: url('../img/gopher.jpg');
+	background-size: auto 100%;
+	background-position: center;
+}
+
+.navigation {
+
+}
+
+.versus {
+	font-size: 20vw;
+	transform: translate(-5vw);
+
+	@include breakpoint(tiny) {
+		transform: none;
+		border: 3vw solid $universalWhite;
+		padding: 5vw;
+
+		&:hover {
+			background-color: $universalWhite;
+			color: $fightRed;
+			border-color: $fightRed;
+			border-width: 3vw;
+		}
+	}
+}
+
+.invisible {
+	display: none;
+}
+
+
+
+
+
+
+
 
 

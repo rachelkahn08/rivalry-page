@@ -10,10 +10,10 @@ $(document).ready(function() {
 
 		toggleVisibility();
 
-		if ( $('.gopher-side').classList.contains('.invisible') ) {
-			document.body.setAttribute('backgroundColor', '$carlGrey');
-		} else if ( $('.carl-side').classList.contains('.invisible') ) {
-			document.body.setAttribute('backgroundColor', '$gopherGrey');
-		};
+		// if ( $('.gopher-side').classList.contains('.invisible') ) {
+		// 	document.body.setAttribute('backgroundColor', '$carlGrey');
+		// } else if ( $('.carl-side').classList.contains('.invisible') ) {
+		// 	document.body.setAttribute('backgroundColor', '$gopherGrey');
+		// };
 	});
 });

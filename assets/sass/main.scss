@@ -14,7 +14,6 @@ html, body {
 
 body {
 	color: $universalWhite;
-	background-color: $activeColor;
 }
 
 .side {
@@ -68,6 +67,7 @@ body {
 	.bold {
 		font-size: 10vw;
 		letter-spacing: 1vw;
+		word-wrap: break-word;
 
 		@include breakpoint(tiny){
 			font-size: 12vw;
@@ -116,12 +116,16 @@ body {
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		height: 89vw;
+		height: 90vw;
 	}
 
 	@include breakpoint(tablet) {
 		align-self: flex-end;
-		height: 52vw;
+		height: 55vw;
+	}
+
+	@include breakpoint(laptop) {
+		height: 60vw;
 	}
 }
 
@@ -139,6 +143,10 @@ body {
 	@include breakpoint(tablet) {
 		width: 100%;	
 		transform: none;
+	}
+
+	@include breakpoint(tablet) {
+		font-size: 10vw;
 	}
 }
 
@@ -179,29 +187,39 @@ body {
 }
 
 .navigation {
-
+	@include breakpoint(tablet) {
+		// padding: initial;	
+		// transform: translate(-10vw);
+	}
 }
 
 .versus {
+	
+	border: 1.5vw solid $universalWhite;
+	padding: 1vw;
+	padding-right: 13vw;
+
 	font-size: 20vw;
-	transform: translate(-5vw);
+	transform: translate(-1vw);
+	
+	&:hover {
+		background-color: $universalWhite;
+		color: $fightRed;
+		border-color: $fightRed;
+	}
 
 	@include breakpoint(tiny) {
-		transform: none;
-		border: 3vw solid $universalWhite;
-		padding: 5vw;
-
-		&:hover {
-			background-color: $universalWhite;
-			color: $fightRed;
-			border-color: $fightRed;
-			border-width: 3vw;
-		}
+		border-width: 3vw;
 	}
 
 	@include breakpoint(tablet) {
-		padding: none;	
-		transform: translate(-10vw);
+		border-width: 1vw;
+	}
+
+	@include breakpoint(tablet) {
+		padding: 0.5vw;
+		padding-right: 7.5vw;
+		font-size: 10vw;
 	}
 }
 

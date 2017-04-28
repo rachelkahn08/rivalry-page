@@ -16,6 +16,10 @@ body {
 	color: $universalWhite;
 }
 
+section {
+	min-height: 100%;
+}
+
 .side {
 	display: flex;
 	flex-direction: column;
@@ -121,7 +125,7 @@ body {
 
 	@include breakpoint(tablet) {
 		align-self: flex-end;
-		height: 55vw;
+		height: 56vw;
 	}
 
 	@include breakpoint(laptop) {
@@ -210,16 +214,19 @@ body {
 
 	@include breakpoint(tiny) {
 		border-width: 3vw;
-	}
-
-	@include breakpoint(tablet) {
-		border-width: 1vw;
+		padding: 3vw;
 	}
 
 	@include breakpoint(tablet) {
 		padding: 0.5vw;
 		padding-right: 7.5vw;
 		font-size: 10vw;
+		border-width: 1vw;
+		margin-top: -3vw;
+	}
+
+	@include breakpoint(laptop) {
+		margin-top: -5vw;
 	}
 }
 

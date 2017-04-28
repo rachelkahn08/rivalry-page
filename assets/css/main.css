@@ -48,6 +48,9 @@ html, body {
 body {
   color: #ddd; }
 
+section {
+  min-height: 100%; }
+
 .side {
   display: flex;
   flex-direction: column;
@@ -132,7 +135,7 @@ body {
   @media screen and (min-width: 750px) {
     .details {
       align-self: flex-end;
-      height: 55vw; } }
+      height: 56vw; } }
   @media screen and (min-width: 930px) {
     .details {
       height: 60vw; } }
@@ -192,15 +195,18 @@ body {
     border-color: #440011; }
   @media screen and (max-width: 200px) {
     .versus {
-      border-width: 3vw; } }
-  @media screen and (min-width: 750px) {
-    .versus {
-      border-width: 1vw; } }
+      border-width: 3vw;
+      padding: 3vw; } }
   @media screen and (min-width: 750px) {
     .versus {
       padding: 0.5vw;
       padding-right: 7.5vw;
-      font-size: 10vw; } }
+      font-size: 10vw;
+      border-width: 1vw;
+      margin-top: -3vw; } }
+  @media screen and (min-width: 930px) {
+    .versus {
+      margin-top: -5vw; } }
 
 .invisible {
   display: none; }

@@ -63,11 +63,20 @@ body {
     background-color: white;
     margin-top: 17.5vw;
     background-repeat: no-repeat; }
+    @media screen and (min-width: 750px) {
+      .side .character {
+        height: 35vw;
+        width: 35vw;
+        align-self: flex-start;
+        margin-left: 5.3vw; } }
   .side .copy {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+    @media screen and (min-width: 750px) {
+      .side .copy {
+        align-self: flex-end; } }
 
 .name, .bold {
   font-family: tarrgetplatital; }
@@ -86,6 +95,12 @@ body {
     @media screen and (min-width: 400px) {
       .details .bold {
         font-size: 8vw; } }
+    @media screen and (min-width: 750px) {
+      .details .bold {
+        font-size: 4vw;
+        width: 75vw;
+        text-align: right;
+        margin-right: 15vw; } }
   .details .bullet-point {
     margin-bottom: 10vw;
     font-family: lato-light;
@@ -101,12 +116,22 @@ body {
       .details .bullet-point {
         font-size: 6vw;
         margin-bottom: 5vw; } }
+    @media screen and (min-width: 750px) {
+      .details .bullet-point {
+        width: 75vw;
+        font-size: 4vw;
+        text-align: right;
+        margin-right: 15vw; } }
   @media screen and (min-width: 400px) {
     .details {
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
       height: 89vw; } }
+  @media screen and (min-width: 750px) {
+    .details {
+      align-self: flex-end;
+      height: 52vw; } }
 
 .name {
   font-size: 12vw;
@@ -117,10 +142,17 @@ body {
     .name {
       font-size: 14vw;
       text-decoration: underline; } }
+  @media screen and (min-width: 750px) {
+    .name {
+      width: 100%;
+      transform: none; } }
 
 .spacer {
   height: 85vw;
   width: 100vw; }
+  @media screen and (min-width: 750px) {
+    .spacer {
+      display: none; } }
 
 .carl-side {
   background-color: #4E3F3A; }
@@ -154,6 +186,10 @@ body {
         color: #440011;
         border-color: #440011;
         border-width: 3vw; } }
+  @media screen and (min-width: 750px) {
+    .versus {
+      padding: none;
+      transform: translate(-10vw); } }
 
 .invisible {
   display: none; }

@@ -1,6 +1,6 @@
 @import 'fonts';
 @import 'variables';
-@import '_mixins';
+@import 'mixins';
 
 
 * {
@@ -14,6 +14,7 @@ html, body {
 
 body {
 	color: $universalWhite;
+	background-color: $activeColor;
 }
 
 .side {
@@ -32,6 +33,13 @@ body {
 		background-color: white;
 		margin-top: 17.5vw;
 		background-repeat: no-repeat;
+
+		@include breakpoint(tablet) {
+			height: 35vw;
+			width: 35vw;
+			align-self: flex-start;
+			margin-left: 5.3vw;
+		}
 	}
 
 	.copy {
@@ -39,6 +47,10 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
+
+		@include breakpoint(tablet) {
+			align-self: flex-end;
+		}
 	}
 }
 
@@ -64,6 +76,13 @@ body {
 		@include breakpoint(phablet){
 			font-size: 8vw;
 		}
+
+		@include breakpoint(tablet) {
+			font-size: 4vw;
+			width: $threeQuartersWidth;
+			text-align: right;
+			margin-right: 15vw;
+		}
 	}
 
 	.bullet-point {
@@ -84,6 +103,13 @@ body {
 			margin-bottom: 5vw;
 		}
 
+		@include breakpoint(tablet) {
+			width: $threeQuartersWidth;
+			font-size: 4vw;
+			text-align: right;
+			margin-right: 15vw;
+		}
+
 	}
 
 	@include breakpoint(phablet){
@@ -91,6 +117,11 @@ body {
 		flex-direction: column;
 		flex-wrap: wrap;
 		height: 89vw;
+	}
+
+	@include breakpoint(tablet) {
+		align-self: flex-end;
+		height: 52vw;
 	}
 }
 
@@ -104,11 +135,20 @@ body {
 		font-size: 14vw;
 		text-decoration: underline;
 	}
+
+	@include breakpoint(tablet) {
+		width: 100%;	
+		transform: none;
+	}
 }
 
 .spacer {
 	height: 85vw;
 	width: 100vw;
+
+	@include breakpoint(tablet) {
+		display: none;
+	}
 }
 
 .carl-side {
@@ -157,6 +197,11 @@ body {
 			border-color: $fightRed;
 			border-width: 3vw;
 		}
+	}
+
+	@include breakpoint(tablet) {
+		padding: none;	
+		transform: translate(-10vw);
 	}
 }
 

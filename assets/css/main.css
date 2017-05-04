@@ -105,6 +105,10 @@ section {
         width: 75vw;
         text-align: right;
         margin-right: 15vw; } }
+    @media screen and (min-width: 930px) {
+      .details .bold {
+        font-size: 3vw;
+        max-width: 45vw; } }
   .details .bullet-point {
     margin-bottom: 10vw;
     font-family: lato-light;
@@ -126,6 +130,11 @@ section {
         font-size: 4vw;
         text-align: right;
         margin-right: 15vw; } }
+    @media screen and (min-width: 930px) {
+      .details .bullet-point {
+        font-size: 3vw;
+        margin-bottom: 3vw;
+        max-width: 45vw; } }
   @media screen and (min-width: 400px) {
     .details {
       display: flex;
@@ -138,7 +147,8 @@ section {
       height: 56vw; } }
   @media screen and (min-width: 930px) {
     .details {
-      height: 60vw; } }
+      height: 60vw;
+      max-width: 80vw; } }
 
 .name {
   font-size: 12vw;
@@ -155,7 +165,8 @@ section {
       transform: none; } }
   @media screen and (min-width: 750px) {
     .name {
-      font-size: 10vw; } }
+      font-size: 10vw;
+      transform: translate(0vw); } }
 
 .spacer {
   height: 85vw;
@@ -179,9 +190,9 @@ section {
   background-size: 110%; }
 
 .gopher {
-  background-image: url("../img/gopher.jpg");
-  background-size: auto 100%;
-  background-position: center; }
+  background-image: url("../img/gopher.png");
+  background-size: 100% auto;
+  background-position: bottom center; }
 
 .versus {
   border: 1.5vw solid #ddd;
@@ -206,9 +217,77 @@ section {
       margin-top: -3vw; } }
   @media screen and (min-width: 930px) {
     .versus {
-      margin-top: -5vw; } }
+      margin-top: -15vw; } }
 
 .invisible {
   display: none; }
+
+.foreground--grass {
+  background-image: url("../img/grass-foreground.svg");
+  width: 180vw;
+  height: 130vw;
+  left: -80vw;
+  bottom: -71vw;
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-position: left;
+  position: absolute;
+  z-index: 5; }
+  @media screen and (max-width: 200px) {
+    .foreground--grass {
+      display: none; } }
+  @media screen and (min-width: 250px) {
+    .foreground--grass {
+      width: 160vw;
+      height: 60vw;
+      left: -40vw;
+      bottom: -41vw; } }
+  @media screen and (min-width: 300px) {
+    .foreground--grass {
+      bottom: -70vw; } }
+  @media screen and (min-width: 400px) {
+    .foreground--grass {
+      width: 190vw;
+      height: 60vw;
+      left: -40vw;
+      bottom: -74vw; } }
+  @media screen and (min-width: 500px) {
+    .foreground--grass {
+      height: 70vw;
+      left: -42vw;
+      bottom: -110vw; } }
+  @media screen and (min-width: 550px) {
+    .foreground--grass {
+      width: 200vw;
+      height: 50vw;
+      left: -35vw;
+      bottom: -110vw; } }
+  @media screen and (min-width: 600px) {
+    .foreground--grass {
+      bottom: -117vw; } }
+  @media screen and (min-width: 650px) {
+    .foreground--grass {
+      width: 191vw;
+      height: 48vw;
+      left: -31vw;
+      bottom: -129vw; } }
+  @media screen and (min-width: 750px) {
+    .foreground--grass {
+      width: 193vw;
+      height: 48vw;
+      left: -31vw;
+      bottom: -18vw; } }
+  @media screen and (min-width: 930px) {
+    .foreground--grass {
+      width: 193vw;
+      height: 48vw;
+      left: -31vw;
+      bottom: -35vw; } }
+  @media screen and (min-width: 1200px) {
+    .foreground--grass {
+      width: 193vw;
+      height: 48vw;
+      left: -31vw;
+      bottom: -66vw; } }
 
 /*# sourceMappingURL=main.css.map */

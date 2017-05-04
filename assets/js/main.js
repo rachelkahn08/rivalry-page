@@ -17,3 +17,24 @@ $(document).ready(function() {
 		// };
 	});
 });
+
+window.addEventListener('load', animateStuff);
+
+function animateStuff() {
+	console.log('animate stuff');
+	var copyAnimations = new TimelineMax(); 
+
+	copyAnimations
+		.from('.name', 0.5, {
+			x: '-=3000vw'
+		}, 0)
+		.staggerFrom('.bold', 0.5, {
+			x: '-=3000vw'
+		}, 0.5)
+		.staggerFrom('.bullet-point', 0.5, {
+			x: '-=3000vw'
+		}, 0.5);
+};
+
+$('.versus').click(animateStuff);
+

@@ -8,12 +8,39 @@
     @else if $width == laptop {
       @media screen and (min-width: 930px) { @content ; }
     }
-      @else if $width == tablet {
+    
+    @else if $width == tablet {
        @media screen and (min-width: 750px) { @content ; }
     }
+
+    @else if $width ==  medtablet {
+       @media screen and (min-width: 650px) { @content ; }
+    }
+
+    @else if $width == smoltablet {
+      @media screen and (min-width: 600px)  { @content ; }
+    }
+
+    @else if $width == tinytablet {
+      @media screen and (min-width: 550px)  { @content ; }
+    }
+
+    @else if $width == bigphablet {
+      @media screen and (min-width: 500px)  { @content ; }
+    }
+
     @else if $width == phablet {
       @media screen and (min-width: 400px)  { @content ; }
     }
+
+    @else if $width == med {
+      @media screen and (min-width: 300px) { @content ; }
+    }
+
+    @else if $width == smol {
+      @media screen and (min-width:250px) { @content ; }
+    }
+
     @else if $width == tiny {
       @media screen and (max-width: 200px)  { @content ; }
     }

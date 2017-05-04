@@ -87,6 +87,11 @@ section {
 			text-align: right;
 			margin-right: 15vw;
 		}
+
+		@include breakpoint(laptop) {
+			font-size: 3vw;
+			max-width: 45vw;
+		}
 	}
 
 	.bullet-point {
@@ -114,6 +119,12 @@ section {
 			margin-right: 15vw;
 		}
 
+		@include breakpoint(laptop) {
+			font-size: 3vw;
+			margin-bottom: 3vw;
+			max-width: 45vw;
+		}
+
 	}
 
 	@include breakpoint(phablet){
@@ -130,6 +141,7 @@ section {
 
 	@include breakpoint(laptop) {
 		height: 60vw;
+		max-width: 80vw;
 	}
 }
 
@@ -151,7 +163,10 @@ section {
 
 	@include breakpoint(tablet) {
 		font-size: 10vw;
+		transform: translate(0vw);
 	}
+
+
 }
 
 .spacer {
@@ -185,9 +200,9 @@ section {
 }
 
 .gopher {
-	background-image: url('../img/gopher.jpg');
-	background-size: auto 100%;
-	background-position: center;
+	background-image: url('../img/gopher.png');
+	background-size: 100% auto;
+	background-position: bottom center;
 }
 
 .navigation {
@@ -226,7 +241,7 @@ section {
 	}
 
 	@include breakpoint(laptop) {
-		margin-top: -5vw;
+		margin-top: -15vw;
 	}
 }
 
@@ -234,6 +249,93 @@ section {
 	display: none;
 }
 
+.foreground--grass {
+	background-image: url('../img/grass-foreground.svg');
+	//image credit to author Freepik @http://www.freepik.com/free-vector/green-grass-borders_789475.htm
+	width: 180vw;
+	height: 130vw;
+	left: -80vw;
+	bottom: -71vw;
+	background-size: cover;
+	background-repeat: repeat-x;
+	background-position: left;
+	position: absolute;
+	z-index: 5;
+
+	@include breakpoint(tiny) {
+		display: none;
+	}
+
+
+	@include breakpoint(smol) {
+		width: 160vw;
+		height: 60vw;
+		left: -40vw;
+		bottom: -41vw;
+	}
+	
+	@include breakpoint(med) {
+		bottom: -70vw;
+	}
+
+	@include breakpoint(phablet) {
+		width: 190vw;
+		height: 60vw;
+		left: -40vw;
+		bottom: -74vw;
+	}
+
+	@include breakpoint(bigphablet) {
+		height: 70vw;
+		left: -42vw;
+		bottom: -110vw;
+	}
+
+	@include breakpoint(tinytablet) {
+		width: 200vw;
+		height: 50vw;
+		left: -35vw;
+		bottom: -110vw;	
+	}
+
+	@include breakpoint(smoltablet) {
+		bottom: -117vw;	
+	}
+
+	@include breakpoint(medtablet) {
+		width: 191vw;
+		height: 48vw;
+		left: -31vw;
+		bottom: -129vw;
+	}
+
+	@include breakpoint(tablet) {
+		width: 193vw;
+		height: 48vw;
+		left: -31vw;
+		bottom: -18vw;
+	}
+
+	@include breakpoint(laptop) {
+		width: 193vw;
+		height: 48vw;
+		left: -31vw;
+		bottom: -35vw;
+	}
+
+	@include breakpoint(desktop) {
+		width: 193vw;
+		height: 48vw;
+		left: -31vw;
+		bottom: -66vw;
+	}
+
+
+	// width: 200vw;
+	// height: 50vw;
+	// left: -35vw;
+	// bottom: -30vw;
+}
 
 
 
